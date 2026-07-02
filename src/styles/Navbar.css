@@ -1,58 +1,89 @@
 .navbar {
-    background-color: #0a0a0a;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #0a0b0c;
+  padding: 1rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #e50914;
-    letter-spacing: 0.5px;
+.navbar-brand,
+.navbar a.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  text-decoration: none;
+}
+
+.navbar-brand::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #2dd4bf;
+  border-radius: 50%;
+  margin-left: 6px;
+  vertical-align: middle;
 }
 
 .navbar-links {
-    display: flex;
-    gap: 0.5rem;
-    background-color: #1a1a1a;
-    padding: 0.4rem;
-    border-radius: 999px;
+  display: flex;
+  gap: 0.5rem;
+  background-color: #1a1d21;
+  padding: 0.35rem;
+  border-radius: 8px;
 }
 
-.nav-link {
-    font-size: 0.95rem;
-    padding: 0.5rem 1.25rem;
-    border-radius: 999px;
-    transition: background-color 0.2s;
+.nav-link,
+.navbar a.nav-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #9aa0a6;
+  padding: 0.5rem 1.1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition:
+    color 0.2s,
+    background-color 0.2s;
 }
 
-.nav-link:hover {
-    background-color: #2e2e2e;
+.navbar a.nav-link:hover {
+  color: #ffffff;
+}
+.nav-link.active {
+  color: #101214;
+  background-color: #2dd4bf;
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        padding: 1rem;
-    }
-    .navbar-brand {
-        font-size: 1.2rem;
-    }
-    .nav-link {
-        padding: 0.5rem 1rem;
-    }
+  .navbar {
+    padding: 0.85rem 1.25rem;
+  }
+  .navbar-brand,
+  .navbar a.navbar-brand {
+    font-size: 1.25rem;
+  }
+  .nav-link,
+  .navbar a.nav-link {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .navbar {
-        flex-direction: column;
-        gap: 0.75rem;
-        padding: 0.75rem;
-    }
-    .navbar-links {
-        width: 100%;
-        justify-content: center;
-    }
+  .navbar {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+  .navbar-links {
+    width: 100%;
+    justify-content: center;
+  }
+  .nav-link,
+  .navbar a.nav-link {
+    flex: 1;
+    text-align: center;
+  }
 }

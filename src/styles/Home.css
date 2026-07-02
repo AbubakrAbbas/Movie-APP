@@ -10,9 +10,9 @@
     display: flex;
     gap: 0.5rem;
     padding: 0.4rem;
-    background-color: #1f1f1f;
+    background-color: #1a1d21;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 999px;
+    border-radius: 10px;
     box-sizing: border-box;
 }
 
@@ -20,10 +20,14 @@
     flex: 1;
     padding: 0.75rem 1.25rem;
     border: none;
-    border-radius: 999px;
+    border-radius: 6px;
     background-color: transparent;
-    color: white;
+    color: #e8eaed;
     font-size: 1rem;
+}
+
+.search-input::placeholder {
+    color: #6b7076;
 }
 
 .search-input:focus {
@@ -32,18 +36,18 @@
 
 .search-button {
     padding: 0.75rem 1.75rem;
-    background-color: #e50914;
-    color: white;
+    background-color: #2dd4bf;
+    color: #101214;
     border: none;
-    border-radius: 999px;
-    font-weight: 500;
+    border-radius: 6px;
+    font-weight: 700;
     transition: background-color 0.2s;
     white-space: nowrap;
     cursor: pointer;
 }
 
 .search-button:hover {
-    background-color: #f40612;
+    background-color: #5eead4;
 }
 
 .movies-grid {
@@ -61,7 +65,7 @@
     }
     .search-form {
         flex-direction: column;
-        border-radius: 20px;
+        border-radius: 12px;
         gap: 0.5rem;
     }
     .search-button {
