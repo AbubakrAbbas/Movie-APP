@@ -2,7 +2,8 @@
 
 A movie discovery application built with React and Vite. Displays trending movies and lets users maintain a personal favorites list.
 
-**Live Demo:** [add link after deployment]
+**Live Demo:** https://movie-app-lemon-pi.vercel.app/
+
 **Repository:** https://github.com/AbubakrAbbas/Movie-APP
 
 ## Overview
@@ -67,10 +68,8 @@ npm install
 Create a `.env` file in the project root:
 
 ```
-VITE_API_KEY=your_api_key_here
+VITE_API_KEY = 889bfca99b5f9b9da2e1a16258013948
 ```
-
-Replace `your_api_key_here` with a key from the movie data provider used in `src/services/API.js`.
 
 ### Run Locally
 
